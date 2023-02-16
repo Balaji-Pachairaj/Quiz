@@ -1,17 +1,16 @@
-.mainContainer{
+#mainContainer{
     width: 52%;
     height: 400px;
 }
-.questionContainer{
+#questionContainer{
     width: 100%;
     height: 35%;
 }
 
-
-
 .pervious , .next {
     width: 5%;
     height: 100%;
+    color: black;
 }
 .nextWidth{
     transform: translate(5%,-50%);
@@ -19,11 +18,12 @@
 .perviousWidth{
     transform: translate(-55%,-50%);
 }
+
 .Btn{
     width: 60px;
     height: 60px;
     background-color: rgb(247, 235, 235);
-    font-size:250%;
+    font-size: 250%;
 }
 .Btn:hover{
     cursor: pointer;
@@ -38,9 +38,41 @@
     height: 100%;
 }
 
+
+
+#optionContainer{
+    width: 100%;
+    height: 65%;
+}
+
+.option{
+    width: 100%;
+    height: 75%;
+  
+}
+.optionIndiv{
+    margin-left: 7%;
+}
+
+#boxOption{
+    width: 100%;
+    height: 25%;
+}
+.optionButton button {
+    width: 10%;
+    height: 30px;
+  
+}
+
+.btn-selected{
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(196, 66, 66);
+}
+
 /* Media Query Section */
 @media (max-width:900px){
-    .mainContainer{
+    #mainContainer{
         width: 66%;
     }
     .Btn{
@@ -50,7 +82,7 @@
     }
 }
 @media (max-width : 600px){
-    .mainContainer{
+    #mainContainer{
         width: 100%;
     }
     .perviousWidth , .nextWidth{
@@ -65,16 +97,29 @@
 /*------------------------------------*/
 
 /*Blackground Color Section*/
-
+.day{
+    background-color: white;
+}
 .dayBoxColor{
     background-color:#C780FA;
+    color: white;
 }
 .dayBorderColor{
     border: solid 2px #FADA9D;
+}
+.dayOptionBoxColor{
+    background-color: #FBF1D3;
+}
+.night{
+    background-color: rgb(44, 41, 41);
 }
 .nightBoxColor{
     background-color: #E3ACF9;
 }
 .nightBorderColor{
     border: solid 2px #FBF1D3;
+}
+.nightOptionBoxColor{
+    background-color: #FADA9D;
+    color: white;
 }
