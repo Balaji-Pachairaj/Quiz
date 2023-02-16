@@ -27,6 +27,7 @@ function themeDarkDay(key){
         setTheme = "day";
         removeTheme = "night"
     }
+    
     //this is DOM section for changing appropriate color
     //mainContainer - dayBorderColor / nightBorderColor
     $("#mainContainer").addClass(`${setTheme}BorderColor`);
