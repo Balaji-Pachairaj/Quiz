@@ -53,6 +53,9 @@
 .optionIndiv{
     margin-left: 7%;
 }
+.optionIndiv label{
+    font-size: 100%;
+}
 
 #boxOption{
     width: 100%;
@@ -70,20 +73,37 @@
     background-color: rgb(196, 66, 66);
 }
 
+
+
+#submitBtn{
+    width: 50%;
+    height: 35px;
+    transform: translateX(-50%);
+    bottom: -10%;
+}
+
+
 /* Media Query Section */
 @media (max-width:900px){
     #mainContainer{
-        width: 66%;
+        width: 70%;
+    }
+    .optionIndiv label{
+        font-size: 90%;
     }
     .Btn{
         width: 45px;
         height: 45px;
         font-size: 200%;
     }
+
 }
 @media (max-width : 600px){
     #mainContainer{
         width: 100%;
+    }
+    .optionIndiv label{
+        font-size: 80%;
     }
     .perviousWidth , .nextWidth{
         transform: translate(0,-50%);
