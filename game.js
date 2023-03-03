@@ -124,7 +124,9 @@ function main(options){
         isEntered = false
         displayResult()
         isSubmit = false
-        alert("The End");
+        alert("Restart");
+        questioncount = 0;
+        getQuestion(questioncount)
     }
     getQuestion(questioncount)
     if (options > 0){
